@@ -264,6 +264,66 @@ body::before {
   font-size: 11px;
 }
 
+/* Must Reads */
+.must-reads {
+  border: 1px solid var(--text-dim);
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.must-reads-title {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.must-reads-title:hover {
+  color: var(--link-hover);
+}
+
+.must-reads-toggle {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.must-reads-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #0a2a0a;
+}
+
+.must-reads-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.must-reads-item a {
+  color: var(--link);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.must-reads-item a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.must-reads-item p {
+  color: var(--text-dim);
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
 /* Footer */
 .footer {
   margin-top: 40px;

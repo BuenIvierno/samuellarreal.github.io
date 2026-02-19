@@ -54,6 +54,29 @@
   <button onclick="filter('congress')">🏛️ CONGRESS</button>
   <button onclick="filter('wh')">🏠 WHITE HOUSE</button>
 </div>
+
+<div class="must-reads" id="must-reads">
+  <div class="must-reads-title" onclick="toggleMustReads()">// MUST READS <span class="must-reads-toggle" id="must-reads-toggle">[−]</span></div>
+  <div class="must-reads-list" id="must-reads-list">
+    <div class="must-reads-item">
+      <a href="https://www.notus.org/technology/data-centers-community-investment">Data Centers Are Embedding Themselves in American Communities. Who Will Pay?</a>
+      <p>Small towns across the country are tying their economic futures to Silicon Valley's massive data center investments. Many state governments don't have reliable data to judge whether their billions in tax incentives will pay off. I also found that if these projects stalled, residents of small towns would face property tax hikes to pay for infrastructure that was built to serve facilities that no longer need it.</p>
+    </div>
+    <div class="must-reads-item">
+      <a href="https://www.notus.org/2026-election/ai-super-pacs-leading-the-future-public-first-alex-bores">The AI Super PAC Fight That Might Shape the Midterms</a>
+      <p>This story was early to a trend that other outlets covered weeks later — how the emergence of AI-aligned super PACs preparing to spend big in the 2026 midterms might shape the future of AI regulation. The piece focuses on New York Assemblymember Alex Bores, author of AI safety legislation who became a target of industry-backed groups like Leading the Future after announcing a bid for Congress. The story maps out how elections have become a new front in the AI policy wars.</p>
+    </div>
+    <div class="must-reads-item">
+      <a href="https://www.notus.org/technology/data-centers-ai-energy-lobbying-donald-trump-congress">Trump Loves Data Centers. Many Republican Lawmakers Don't</a>
+      <p>This story explores the widening gap between Republicans in state Legislatures and Republicans in Washington on AI and data center regulation. State-level Republicans told me there is a growing skepticism with how close President Trump has become to Silicon Valley and said skepticism is translating into a greater push to regulate and even impose a moratorium on new data centers.</p>
+    </div>
+    <div class="must-reads-item">
+      <a href="https://www.notus.org/congress/palantir-stock-investing-democrats-immigration">These Democrats Decry Trump's Immigration Actions. They Also Invested in ICE Contractor Palantir.</a>
+      <p>In this story I talked to Democratic lawmakers who have publicly denounced Trump's immigration enforcement while holding personal investments in Palantir, a prominent contractor for ICE. Some of them traded millions in Palantir stock throughout last year. Some of them argued their holdings don't present any conflict with their position. Others, like Rep. Cleo Fields told me: "I wish I could get my money back."</p>
+    </div>
+  </div>
+</div>
+
 <div class="counter" id="counter"></div>
 <ul class="stories" id="stories">
   <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/kelly-loeffler-nvidia-groq-stock-investment-trump-administration">Nvidia Struck a $20 Billion Deal With an AI Startup. Kelly Loeffler Made a Massive Investment Weeks Earlier.</a></div></li>
@@ -190,12 +213,28 @@
   }
   typeLine();
 })();
+function toggleMustReads() {
+  const list = document.getElementById('must-reads-list');
+  const toggle = document.getElementById('must-reads-toggle');
+  if (list.style.display === 'none') {
+    list.style.display = 'block';
+    toggle.textContent = '[−]';
+  } else {
+    list.style.display = 'none';
+    toggle.textContent = '[+]';
+  }
+}
 function filter(cat) {
   const items = document.querySelectorAll('.stories li');
   const buttons = document.querySelectorAll('.filters button');
+  const mustReads = document.getElementById('must-reads');
   let visible = 0;
   buttons.forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
+  // Hide must reads when filtering by category
+  if (mustReads) {
+    mustReads.style.display = cat === 'all' ? 'block' : 'none';
+  }
   items.forEach(li => {
     if (cat === 'all' || li.dataset.cat === cat) {
       li.style.display = 'flex';

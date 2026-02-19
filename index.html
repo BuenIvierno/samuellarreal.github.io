@@ -8,6 +8,16 @@
 </head>
 <body>
 
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+  <div class="loader-content">
+    <div class="loader-text" id="loader-text"></div>
+    <div class="loader-cursor"></div>
+  </div>
+</div>
+
+<div class="site-content" id="site-content">
+
 <div class="terminal-window">
   <div class="terminal-titlebar">
     <span>C:\USERS\SAMUEL\PORTFOLIO.EXE</span>
@@ -147,7 +157,64 @@
   © 2026 SAMUEL LARREAL // BUILT WITH SPITE AND CAFFEINE
 </div>
 
+</div><!-- .site-content -->
+
 <script>
+// Loading screen
+(function() {
+  const lines = [
+    'C:\\> PORTFOLIO.EXE',
+    'Loading...',
+    'Ready.'
+  ];
+
+  const loaderText = document.getElementById('loader-text');
+  const loader = document.getElementById('loader');
+  const siteContent = document.getElementById('site-content');
+  let lineIndex = 0;
+
+  function typeLine() {
+    if (lineIndex >= lines.length) {
+      // All lines typed, fade out after a brief pause
+      setTimeout(() => {
+        loader.classList.add('loader-fade');
+        setTimeout(() => {
+          loader.style.display = 'none';
+          siteContent.classList.add('site-visible');
+          // Trigger the story counter
+          const total = document.querySelectorAll('.stories li').length;
+          document.getElementById('counter').textContent = `> ${total} stories loaded_`;
+        }, 200);
+      }, 100);
+      return;
+    }
+
+    const line = lines[lineIndex];
+    const div = document.createElement('div');
+    div.classList.add('loader-line');
+    loaderText.appendChild(div);
+
+    let charIndex = 0;
+    const speed = lineIndex === 0 ? 20 : 10; // Fast typing
+
+    function typeChar() {
+      if (charIndex < line.length) {
+        div.textContent = line.substring(0, charIndex + 1);
+        charIndex++;
+        setTimeout(typeChar, speed);
+      } else {
+        lineIndex++;
+        const delay = lineIndex === lines.length ? 0 : 80 + Math.random() * 60;
+        setTimeout(typeLine, delay);
+      }
+    }
+
+    typeChar();
+  }
+
+  typeLine();
+})();
+
 function filter(cat) {
   const items = document.querySelectorAll('.stories li');
   const buttons = document.querySelectorAll('.filters button');
@@ -171,11 +238,6 @@ function filter(cat) {
       : `> ${visible} stories matching [${cat.toUpperCase()}]_`;
 }
 
-// Init count
-document.addEventListener('DOMContentLoaded', () => {
-  const total = document.querySelectorAll('.stories li').length;
-  document.getElementById('counter').textContent = `> ${total} stories loaded_`;
-});
 </script>
 
 </body>

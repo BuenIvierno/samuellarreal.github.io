@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <!-- Loading Screen -->
 <div class="loader" id="loader">
   <div class="loader-content">
@@ -15,9 +14,7 @@
     <div class="loader-cursor"></div>
   </div>
 </div>
-
 <div class="site-content" id="site-content">
-
 <div class="terminal-window">
   <div class="terminal-titlebar">
     <span>C:\USERS\SAMUEL\PORTFOLIO.EXE</span>
@@ -31,13 +28,13 @@
     <h1>SAMUEL LARREAL</h1>
     <div class="subtitle">TECHNOLOGY & POLITICS REPORTER // WASHINGTON, D.C.</div>
     <div class="bio">
-      Reporter at <a href="https://www.notus.org/samuel-larreal" style="color:var(--accent);text-decoration:none;">NOTUS</a> I cover generative AI policy, 
-      social media regulation, cryptocurrency, and tech industry political influence for NOTUS. 
-      <br><br> 
-      Previusly, I worked as Florida election correspondent for Teen Vogue, bilingual fact-checker for the Miami Herald, and local news intern at NBC4 Washington and Telemundo 44.  
-      
+      Reporter at <a href="https://www.notus.org/samuel-larreal" style="color:var(--accent);text-decoration:none;">NOTUS</a> I cover generative AI policy,
+      social media regulation, cryptocurrency, and tech industry political influence for NOTUS.
+      <br><br>
+      Previusly, I worked as Florida election correspondent for Teen Vogue, bilingual fact-checker for the Miami Herald, and local news intern at NBC4 Washington and Telemundo 44.
+
       <span class="cursor"></span>
-    
+
     </div>
     <div class="contact">
       <a href="mailto:samuellarreal@gmail.com">samuellarreal@gmail.com</a> ·
@@ -45,7 +42,6 @@
     </div>
   </div>
 </div>
-
 <div class="filters">
   <button class="active" onclick="filter('all')">ALL</button>
   <button onclick="filter('ai')">🤖 AI</button>
@@ -58,9 +54,7 @@
   <button onclick="filter('congress')">🏛️ CONGRESS</button>
   <button onclick="filter('wh')">🏠 WHITE HOUSE</button>
 </div>
-
 <div class="counter" id="counter"></div>
-
 <ul class="stories" id="stories">
   <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/kelly-loeffler-nvidia-groq-stock-investment-trump-administration">Nvidia Struck a $20 Billion Deal With an AI Startup. Kelly Loeffler Made a Massive Investment Weeks Earlier.</a></div></li>
   <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/congress/palantir-stock-investing-democrats-immigration">These Democrats Decry Trump's Immigration Actions. They Also Invested in ICE Contractor Palantir.</a></div></li>
@@ -140,7 +134,6 @@
   <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/california-democrats-redistrict-texas-trigger">California Democrats Say They'll Redistrict Only if Texas Does First</a></div></li>
   <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-classified-info-congress">Trump Wants to Limit Classified Info Sharing With Congress</a></div></li>
 </ul>
-
 <div class="footer">
   <a href="https://www.notus.org/samuel-larreal">NOTUS</a> ·
   <a href="mailto:samuellarreal@gmail.com">EMAIL</a> ·
@@ -148,9 +141,7 @@
   <br><br>
   © 2026 SAMUEL LARREAL // BUILT WITH SPITE AND CAFFEINE
 </div>
-
 </div><!-- .site-content -->
-
 <script>
 // Loading screen
 (function() {
@@ -159,12 +150,10 @@
     'Loading...',
     'Ready.'
   ];
-
   const loaderText = document.getElementById('loader-text');
   const loader = document.getElementById('loader');
   const siteContent = document.getElementById('site-content');
   let lineIndex = 0;
-
   function typeLine() {
     if (lineIndex >= lines.length) {
       // All lines typed, fade out after a brief pause
@@ -180,15 +169,12 @@
       }, 100);
       return;
     }
-
     const line = lines[lineIndex];
     const div = document.createElement('div');
     div.classList.add('loader-line');
     loaderText.appendChild(div);
-
     let charIndex = 0;
     const speed = lineIndex === 0 ? 20 : 10; // Fast typing
-
     function typeChar() {
       if (charIndex < line.length) {
         div.textContent = line.substring(0, charIndex + 1);
@@ -200,21 +186,16 @@
         setTimeout(typeLine, delay);
       }
     }
-
     typeChar();
   }
-
   typeLine();
 })();
-
 function filter(cat) {
   const items = document.querySelectorAll('.stories li');
   const buttons = document.querySelectorAll('.filters button');
   let visible = 0;
-
   buttons.forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
-
   items.forEach(li => {
     if (cat === 'all' || li.dataset.cat === cat) {
       li.style.display = 'flex';
@@ -223,14 +204,11 @@ function filter(cat) {
       li.style.display = 'none';
     }
   });
-
   document.getElementById('counter').textContent =
     cat === 'all'
       ? `> ${visible} stories loaded_`
       : `> ${visible} stories matching [${cat.toUpperCase()}]_`;
 }
-
 </script>
-
 </body>
 </html>

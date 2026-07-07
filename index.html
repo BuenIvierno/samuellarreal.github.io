@@ -7,277 +7,314 @@
 <meta name="description" content="Samuel Larreal is a technology and politics reporter at NOTUS covering AI policy, social media regulation, cryptocurrency, and tech industry political influence in Washington, D.C.">
 <meta name="author" content="Samuel Larreal">
 <link rel="canonical" href="https://samuellarreal.com/">
-<!-- Open Graph -->
 <meta property="og:title" content="Samuel Larreal — Technology & Politics Reporter">
 <meta property="og:description" content="Technology and politics reporter at NOTUS covering AI policy, social media regulation, cryptocurrency, and how tech giants shape national politics.">
 <meta property="og:url" content="https://samuellarreal.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Samuel Larreal">
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Samuel Larreal — Technology & Politics Reporter">
 <meta name="twitter:description" content="Technology and politics reporter at NOTUS covering AI policy, social media regulation, cryptocurrency, and how tech giants shape national politics.">
 <meta name="twitter:site" content="@samuellarreal_">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Loading Screen -->
-<div class="loader" id="loader">
-  <div class="loader-content">
-    <div class="loader-text" id="loader-text"></div>
-    <div class="loader-cursor"></div>
+<div class="page">
+  <div class="window-wrap">
+    <div class="window">
+
+      <div class="titlebar">
+        <span class="status-dot"></span>
+        <span class="titlebar-label">C:\USERS\SAMUEL\PORTFOLIO.EXE</span>
+      </div>
+
+      <div class="content">
+        <h1 class="name">Samuel Larreal<span class="caret"></span></h1>
+        <div class="eyebrow">Technology &amp; Politics Reporter <span class="sep">//</span> Washington, D.C.</div>
+
+        <p class="bio-main">I cover technology and politics for <a href="https://www.notus.org/samuel-larreal" target="_blank" rel="noopener noreferrer" class="accent-link">NOTUS</a> — focusing on AI policy, social media regulation, and how tech giants shape national politics.</p>
+        <p class="bio-prev">Previously: Florida election correspondent for Teen Vogue, a bilingual fact-checker for the Miami Herald, and a local news intern at NBC4 Washington and Telemundo 44.</p>
+
+        <div class="contact">
+          <a href="mailto:samuellarreal@gmail.com" class="accent-link">samuellarreal@gmail.com</a>
+          <a href="https://signal.me/#eu/0o-IYvPxMIVjHw2jOKnNsajdBa6TX7qnUX8H0RVr9kncqbuMi4BCFYicopst7swd" target="_blank" rel="noopener noreferrer" class="accent-link">Signal</a>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">ALL</button>
+          <button class="chip" data-filter="ai">🤖 AI</button>
+          <button class="chip" data-filter="crypto">💰 CRYPTO</button>
+          <button class="chip" data-filter="data">🏗️ DATA CTR</button>
+          <button class="chip" data-filter="deepfake">🎭 DEEPFAKES</button>
+          <button class="chip" data-filter="tiktok">📱 TIKTOK</button>
+          <button class="chip" data-filter="money">📊 MONEY</button>
+          <button class="chip" data-filter="ca">🌴 CALIFORNIA</button>
+          <button class="chip" data-filter="congress">🏛️ CONGRESS</button>
+          <button class="chip" data-filter="wh">🏠 WHITE HOUSE</button>
+        </div>
+
+        <div class="must-reads" id="must-reads">
+          <button class="must-reads-toggle" id="mr-toggle">
+            <span>Must Reads</span>
+            <span class="toggle-glyph" id="mr-glyph">[−]</span>
+          </button>
+          <div class="must-reads-list" id="mr-list">
+            <a href="https://www.notus.org/technology/data-centers-community-investment" class="mr-item" target="_blank" rel="noopener noreferrer">
+              <div class="mr-title">Data Centers Are Embedding Themselves in American Communities. Who Will Pay?</div>
+              <div class="mr-dek">Small towns are tying their economic futures to Silicon Valley's data-center boom — and could be left paying the bill.</div>
+            </a>
+            <a href="https://www.notus.org/2026-election/ai-super-pacs-leading-the-future-public-first-alex-bores" class="mr-item" target="_blank" rel="noopener noreferrer">
+              <div class="mr-title">The AI Super PAC Fight That Might Shape the Midterms</div>
+              <div class="mr-dek">AI-aligned super PACs are pouring money into 2026, targeting candidates like Alex Bores who cross the industry.</div>
+            </a>
+            <a href="https://www.notus.org/technology/trump-data-centers-state-republican-lawmakers" class="mr-item" target="_blank" rel="noopener noreferrer">
+              <div class="mr-title">Trump Loves Data Centers. Many Republican Lawmakers Don't.</div>
+              <div class="mr-dek">A widening gap between statehouse Republicans and Washington over how hard to regulate data centers.</div>
+            </a>
+            <a href="https://www.notus.org/congress/palantir-stock-investing-democrats-immigration" class="mr-item" target="_blank" rel="noopener noreferrer">
+              <div class="mr-title">These Democrats Decry Trump's Immigration Actions. They Also Invested in ICE Contractor Palantir.</div>
+              <div class="mr-dek">Lawmakers who denounced Trump's immigration crackdown while holding stock in ICE contractor Palantir.</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="articles-section">
+          <div class="articles-header">
+            <span id="filter-label">ALL FILED</span>
+            <span id="article-count"></span>
+          </div>
+          <ul class="articles-list" id="articles">
+  <li data-cat="ai"><a href="https://www.notus.org/2026-election/mallory-mcmorrow-ai-policy-michigan-senate" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">AI Is Scaring American Workers. Mallory McMorrow Sees An Opportunity.</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/donald-trump-stock-investments-portfolio-disclosure" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">What Donald Trump Knows About His Stock Investments</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/donald-trump-stock-investments-palantir-axom-nvidia" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Trump Bought Corporations' Stock as His Administration Boosted Their Business<span class="coauthor"> w/ Jackie Llanos</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/2026-election/progressives-ai-policy-concerns-election" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Progressives Bet AI Anxiety Will Win Them Elections</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/defense/military-contractors-campaign-contributions-congress" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Defense Contractors Pump Big Money Into Congressional Campaign Accounts Amid Iran War</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/congress/democrats-ai-claude-chatbot-trump-social-media-congress" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Lawmakers on Capitol Hill Are Learning to Love AI<span class="coauthor"> w/ Igor Bobic</span></span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/technology/trump-white-house-app-cybersecurity" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">The White House App Is Riddled With Cybersecurity Vulnerabilities<span class="coauthor"> w/ Emily Kennard</span></span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/democrats/democrats-eric-swalwell-political-ai-startup-findraiser-pitch-lawmakers" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Democrats Say Rep. Eric Swalwell Personally Pitched His Political AI Startup to Lawmakers</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/senate/senate-advances-markwayne-mullins-nomination-for-dhs-secretary" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Senate Advances Markwayne Mullin's Nomination for DHS Secretary<span class="coauthor"> w/ Torrie Herrington</span></span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/eric-swalwell-california-company-ai-campaigns" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Eric Swalwell's AI-Powered Political Startup Is Making Big Money From Democratic Allies</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/palantir-lobbyists-government-contracts-ice-defense" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Palantir Hires Two New Lobbyists With Democratic Party Ties</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/2026-election/illinois-democratic-primaries-outside-money-ai-aipac" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Outside Group Spending Is Overwhelming Democratic Primaries</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/defense/defense-committee-ai-use-military-iran-strikes" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">House Defense Committee Leaders Don't Know How AI Is Being Used on Iran</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/anthropic-defense-ai-industry-competitiveness-china-concerns" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Republicans Want to Protect the AI Industry as the Pentagon Cracks Down on Anthropic</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/senate/republicans-block-war-powers-resolution-iran" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Senate Republicans Block Effort to Curb Trump's War Powers on Iran<span class="coauthor"> w/ Hamed Ahmadi</span></span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/technology/big-tech-leaders-sign-trump-nonbinding-pledge-data-center-fallout" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">Big Tech Leaders Sign Trump's Nonbinding Pledge to Address Data Center Fallout</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/democrats-trump-anthropic-feud-ai-industry" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Some Democrats Hope Trump's Anthropic Feud Will Help Them Win Over the AI Industry</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/rapid-u-s-military-operation-in-iran-hasnt-sparked-quick-response-by-congress" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Rapid U.S. Military Operation in Iran Hasn't Sparked Quick Response by Congress<span class="coauthor"> w/ Hamed Ahmadi, Avani Kalra, Riley Rogerson</span></span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/trump-iran-strikes-war-powers-tim-kaine-massie-khanna" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Trump's Iran Strikes Haven't Changed the State of Play on Congress' War Powers Push</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/foreign-policy/senate-intelligence-mark-warner-trump-strikes-iran-nuclear-weapon" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Senate Intelligence Leader Lays Out Worst-Case Scenario After Trump's Strikes on Iran</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/trump-white-house/trump-anthropic-federal-agency-work-pentagon" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">Trump Moves to Cut Anthropic From Federal Agency Work</span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/technology/trump-tech-companies-data-center-energy-cost-state-of-the-union" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">Trump Puts Pressure on Tech Companies to Pick Up the Tab for Data Center Energy</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/tom-suozzi-palantir-stock-homeland-security-ice" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Democratic Rep. Tom Suozzi Owned Palantir Stock While Voting to Fund Homeland Security</span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/technology/trump-data-centers-state-republican-lawmakers" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">Trump Loves Data Centers. Many Republican Lawmakers Don't.</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/kelly-loeffler-nvidia-groq-stock-investment-trump-administration" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Nvidia Struck a $20 Billion Deal With an AI Startup. Kelly Loeffler Made a Massive Investment Weeks Earlier.</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/congress/palantir-stock-investing-democrats-immigration" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">These Democrats Decry Trump's Immigration Actions. They Also Invested in ICE Contractor Palantir.</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/dhs-funding-talks-deal-progress" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Lawmakers Are Nowhere Near a Deal on DHS Funding<span class="coauthor"> w/ Em Luetkemeyer, Daniella Diaz</span></span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/technology/virginia-data-centers-subramanyam" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">The Virginia Democrat in the Middle of the Data Center Boom Wants His Party to Crack Down</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/theft-pac-political-committee-american-fintech-council" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Banking Industry Political Committee Hit with Fraud</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/ai-super-pac-fundraising-midterms-democrats-republicans" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">AI Industry Super PAC Enters Midterm Elections With a $70 Million War Chest<span class="coauthor"> w/ Taylor Giorno</span></span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/technology/democrats-claims-anti-trump-censorship-tiktok" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Democrats Are Taking Claims of Anti-Trump Censorship on TikTok Seriously</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/grok-ai-images-republicans-content-moderation" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Grok Is Testing Republicans on Content Moderation</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/money/nvidia-stock-trades-congress-pelosi-khanna-mcclain-cleo-fields" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Nvidia Won Trump's Favor. These Federal Lawmakers Stand to Profit.</span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/technology/data-centers-ai-energy-lobbying-donald-trump-congress" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">Data Center Lobbying Is Booming as Tech and Energy Giants Face 'Affordability' Backlash<span class="coauthor"> w/ Shifra Dayak, Jade Lozada</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/silicon-valley-tech-force-trump" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Silicon Valley Has Bought Into Trump's 'Tech Force' — Even as Details Remain TBD<span class="coauthor"> w/ Margaret Manto</span></span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/2026-election/ai-super-pacs-leading-the-future-public-first-alex-bores" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">The AI Super PAC Fight That Might Shape the Midterms</span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/campaigns/abdul-el-sayed-democrat-senate-candidate-data-center-backlash" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">This Democratic Candidate Is Trying to Leverage Data Center Backlash</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/house/republican-doug-lamalfa-house" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Republican Rep. Doug LaMalfa Has Died</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/trump-white-house/epstein-files-release-trump-doj-defends" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">Latest Epstein Files Release Includes Many Mentions of Trump. The DOJ Called Them 'Unfounded.'</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/us-news/epstein-files-trump-doj-bill-clinton" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">Trump DOJ's First Epstein Files Drop Heavily Features Bill Clinton</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/republicans-retirement-watch" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">These House Republicans Won't Commit to Running in 2026<span class="coauthor"> w/ Riley Rogerson, Oriana González, Em Luetkemeyer</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/republicans-trump-ai-agenda" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Will Trump's AI Agenda Backfire?</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/trump-executive-state-level-ai-regulation" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Trump Signs Executive Order Aimed at Curbing State-Level AI Regulation</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/congress-regulate-artificial-intelligence" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">How Congress Fumbled Regulating Artificial Intelligence</span></a></li>
+  <li data-cat="data"><a href="https://www.notus.org/technology/data-centers-community-investment" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏗️</span><span class="headline">Data Centers Are Embedding Themselves in American Communities. Who Will Pay?</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/house-unanimous-vote-senator-sue-government-data-collection-investigation" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">House Unanimously Votes to Repeal Senators' Ability to Sue the Government Over Data Collection<span class="coauthor"> w/ Amelia Benavides-Colón</span></span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/senate/republican-senators-phone-data-provision" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Republican Senators Want to Repeal the Phone Data Provision They Added to the Funding Bill<span class="coauthor"> w/ Ursula Perano</span></span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/courts/doj-lawsuit-stop-california-new-congressional-redistricting-map" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">DOJ Joins Legal Bid to Stop California's New Congressional Map<span class="coauthor"> w/ Manuela Silva</span></span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/house/house-republicans-senate-provision-data" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">House Republicans Want to Force Congress to Revisit a Provision That Lets Senators Sue Over Their Data</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/technology/nancy-pelosi-election-tech-regulation" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">The Race to Replace Nancy Pelosi Could Be All About Tech Regulation</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/technology/nvidia-ceo-jensen-huang-trump-ballroom-east-wing-white-house-donor" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">Nvidia CEO Confirms He's Helping to Fund Trump's Ballroom</span></a></li>
+  <li data-cat="deepfake"><a href="https://www.notus.org/2026-election/artificial-intelligence-political-ads-whats-next" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🎭</span><span class="headline">Artificial Intelligence Is Hitting Politics. Nobody Knows Where It Will End.<span class="coauthor"> w/ Ursula Perano</span></span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/2026-election/california-governors-race-democrats-trump" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">California Is Struggling to Find its Next Trump-Era Leader<span class="coauthor"> w/ Manuela Silva</span></span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/trump-white-house/white-house-east-wing-knock-down-construction-trump-ballroom" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">Crews Knock Down White House Exterior as Trump's Ballroom Project Begins</span></a></li>
+  <li data-cat="deepfake"><a href="https://www.notus.org/campaigns/nrsc-schumer-deepfake" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🎭</span><span class="headline">The NRSC Is Using a Schumer Deepfake to Knock Democrats on Shutdown</span></a></li>
+  <li data-cat="deepfake"><a href="https://www.notus.org/technology/political-strategists-ai" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🎭</span><span class="headline">Political Strategists Are Embracing AI</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/technology/gavin-newsom-donald-trump-ai-policy-california-democrats" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">California's AI Law is Setting the Tone for Democratic Party Policy — And Gavin Newsom's Future</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/democrats/2028-potential-candidates-government-shutdown" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Democratic Presidential Prospects Are Unified in Shutdown Messaging Fight</span></a></li>
+  <li data-cat="tiktok"><a href="https://www.notus.org/technology/trump-tiktok-executive-order" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📱</span><span class="headline">Trump Signs Executive Order Clearing the Way for a TikTok Deal</span></a></li>
+  <li data-cat="tiktok"><a href="https://www.notus.org/technology/tiktok-announcement" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📱</span><span class="headline">The White House Says TikTok Will be Sold to a U.S. Joint Venture</span></a></li>
+  <li data-cat="deepfake"><a href="https://www.notus.org/technology/deepfakes-campaigns" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🎭</span><span class="headline">Deepfakes Are Everywhere, and Many Campaigns Aren't Prepared</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/technology/content-moderation-charlie-kirk-video-social-media" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Republicans Grapple With Content Moderation After Charlie Kirk's Assassination Was Shared on Social Media</span></a></li>
+  <li data-cat="tiktok"><a href="https://www.notus.org/technology/donald-trump-tiktok-sale-deadline-extended-december" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📱</span><span class="headline">Trump Pushes the TikTok Sale Deadline for a Fourth Time</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/charlie-kirk-political-violence-congress-security" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Congress Is Facing Escalating Political Violence — And Doesn't Know How to Stop It</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/us-news/charlie-kirk-utah-political-leaders" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">'Violence Will Not Silence Us' Says Lawmaker Who Represents District Where Charlie Kirk Was Assassinated</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/alex-padilla-gubernatorial-california" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Alex Padilla Won't Rule Out a Gubernatorial Run in California</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/california-republicans-redistricting" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">California Republicans Say the Redistricting Battle Should Play Out in the State Rather than Congress</span></a></li>
+  <li data-cat="tiktok"><a href="https://www.notus.org/trump-white-house/lawmakers-congress-tiktok-law-white-house-account" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📱</span><span class="headline">Lawmakers Are Getting Tired of Trump Ignoring Congress' TikTok Law<span class="coauthor"> w/ Haley Byrd Wilt</span></span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/congress/trumps-pocket-rescission-is-already-complicating-government-funding-negotiations" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Trump's 'Pocket Rescission' Is Already Complicating Government Funding Negotiations</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/newsom-trump-crime-fighting-teams-california-streets" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Channeling Trump, Newsom Deploys His Own Crime-Fighting Teams Onto California Streets</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/trump-white-house/white-house-susan-monarez-cdc-issues-warning" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">White House Says Monarez Wasn't 'Aligned' With Trump on CDC, Issues a Warning to Others</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/democrats/newsom-democrats-ideas-2028-presidential-election-turnaround" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Fired-Up Newsom Shares His Pitch for a Democratic Turnaround</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/trump-white-house/heather-honey-dhs-election-integrity-2020" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">2020 Election Denier Given Key DHS Post Overseeing Election Integrity<span class="coauthor"> w/ Torrence Banks</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/apples-ios-update-polling-industry-damage-spam-filter" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Apple's New iOS Update Could Further Damage an Already Struggling Polling Industry<span class="coauthor"> w/ Nuha Dolby</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/senate/republican-senators-ai-artificial-intelligence-shrink-government" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Republican Senators See AI as a Shortcut to Shrinking the Government</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/kamala-harris-california-governor-race" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Kamala Harris Just Kicked Off the California Governor's Race</span></a></li>
+  <li data-cat="money"><a href="https://www.notus.org/senate/trump-josh-hawley-pawn-truth-social-congressional-stock-trading-ban" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📊</span><span class="headline">Trump Lashes Out at 'Second-Tier Senator' for Backing Stock Trading Ban<span class="coauthor"> w/ Amelia Benavides-Colón</span></span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/kamala-harris-california-governor" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Kamala Harris Won't Run for Governor<span class="coauthor"> w/ Jasmine Wright</span></span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/cryptocurrency-industry-clarity" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">The Cryptocurrency Industry Wants CLARITY When Congress Returns<span class="coauthor"> w/ Taylor Giorno</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/trump-artificial-intelligence-development" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Trump Announces Plan to Accelerate U.S. Artificial Intelligence Development</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/house-cryptocurrency-bill-genius-act" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">House Passes Landmark Cryptocurrency Bill</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/house/house-republicans-crypto-week" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">House Republicans Are Trying to Steer 'Crypto Week' Back on Track</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/house-republicans-crypto-legislation" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">'We're Working It Out': House Republicans Still Don't Know How They'll Pass Crypto Legislation</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/congress/crypto-week-derailed-genius-act" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">Congress's Crypto Week Derailed on Day 1</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/lawmakers-ai-entry-level-tech-jobs" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Lawmakers Worry that AI Will Hurt Entry-Level Tech Jobs</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/policy/reconciliation-bill-gambling" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Republicans' Reconciliation Bill Threatens to Upend the Gambling Industry</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/lawmakers-senate-ai-moratorium-reconciliation" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Lawmakers Are Celebrating the Senate Stripping an AI Moratorium from Reconciliation</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/artificial-intelligence-provision-reconciliation-bill" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Will an Artificial Intelligence Provision Sink Republicans' Reconciliation Bill?</span></a></li>
+  <li data-cat="tiktok"><a href="https://www.notus.org/technology/tiktok-ban-extension-trump" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">📱</span><span class="headline">'I Just Want Finality': Some GOP Senators Are Tired of Trump's TikTok Extensions</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/senate-cryptocurrency-bill-genius-act" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">The Senate Passes Its Landmark Cryptocurrency Bill</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/senate-republicans-crypto-party-priority" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">Senate Republicans Say They're Close to Making Crypto a Party Priority</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/house-republicans-crypto-bill-trump" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">House Republicans Think Their Crypto Bill Stands a Better Chance Under Trump</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/technology/democrats-cryptocurrency-policy-funds" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">Democrats Say They Can Support Crypto While Calling Out Trump</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/trump-executive-orders-drones-flying-cars" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Trump Wants the U.S. to Manufacture Drones and Flying Cars</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/democrats-trump-threats-trans-student-athlete-policies" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">California 'Can't Bend the Knee': Democrats Want Their State to Hold the Line on Trans Rights</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/congress/marjorie-taylor-greene-reconciliation-bill-ai-provision" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Marjorie Taylor Greene Regrets Voting for the Reconciliation Bill Without Reading Its AI Provision</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/congress-ai-chatgpt-google" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Lawmakers Find a New Legislative Assistant: Artificial Intelligence</span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/senate-reconciliation-bill-ai-regulation-moratorium-hawley" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">Hawley Says He'll 'Do Everything I Can to Kill' the AI Provision in the House's Reconciliation Bill</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/congress/trump-memecoin-crypto-gala-democrats" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">Democrats Want to Force Republicans to Vote on Whether They're OK With Trump's Memecoin Activity</span></a></li>
+  <li data-cat="crypto"><a href="https://www.notus.org/senate/cryptocurrency-dave-mccormick-investments" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">💰</span><span class="headline">Sen. Dave McCormick Is Legislating Crypto — And Making Money Off It<span class="coauthor"> w/ Claire Heddles</span></span></a></li>
+  <li data-cat="ai"><a href="https://www.notus.org/technology/house-republicans-ai-regulation-moratorium" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🤖</span><span class="headline">House Republicans Want to Block States From Regulating AI — But Congress Hasn't Made Progress on Its Own Guardrails</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/california-legislature-congressional-district-map" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">The California Legislature Just Cleared the Way for a New Congressional District Map</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/democrats-california-redistricting-gerrymandering-momentum-2026-midterms" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Democrats See California's Redistricting Efforts as a Path to Building Momentum for Their Party</span></a></li>
+  <li data-cat="congress"><a href="https://www.notus.org/senate/adam-schiff-legal-defense-fund-formed" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏛️</span><span class="headline">Adam Schiff Forms Legal Defense Fund to Prepare for Trump Attacks</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/gavin-newsom-trump-homeless-encampments-dc-california-national-guard" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">Trump's Efforts to End Homeless Encampments Are Putting Gavin Newsom in a Political Bind</span></a></li>
+  <li data-cat="ca"><a href="https://www.notus.org/california/california-democrats-redistrict-texas-trigger" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🌴</span><span class="headline">California Democrats Say They'll Redistrict Only if Texas Does First</span></a></li>
+  <li data-cat="wh"><a href="https://www.notus.org/trump-classified-info-congress" class="row-link" target="_blank" rel="noopener noreferrer"><span class="emoji">🏠</span><span class="headline">Trump Wants to Limit Classified Info Sharing With Congress</span></a></li></ul>
+        </div>
+
+        <div class="footer">
+          <span class="footer-links">
+            <a href="https://www.notus.org/samuel-larreal" target="_blank" rel="noopener noreferrer" class="footer-notus">NOTUS</a>
+            <a href="mailto:samuellarreal@gmail.com">Email</a>
+            <a href="https://signal.me/#eu/0o-IYvPxMIVjHw2jOKnNsajdBa6TX7qnUX8H0RVr9kncqbuMi4BCFYicopst7swd" target="_blank" rel="noopener noreferrer">Signal</a>
+          </span>
+          <span>© 2026</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
-<div class="site-content" id="site-content">
-<div class="terminal-window">
-  <div class="terminal-titlebar">
-    <span>C:\USERS\SAMUEL\PORTFOLIO.EXE</span>
-    <div class="buttons">
-      <div class="btn">_</div>
-      <div class="btn">□</div>
-      <div class="btn">×</div>
-    </div>
-  </div>
-  <div class="terminal-body">
-    <h1>SAMUEL LARREAL</h1>
-    <div class="subtitle">TECHNOLOGY & POLITICS REPORTER // WASHINGTON, D.C.</div>
-    <div class="bio">
-        I cover technology and politics for <a href="https://www.notus.org/samuel-larreal" style="color:var(--accent);text-decoration:none;">NOTUS.</a> Focusing on AI policy, social media regulation and how tech giants shape national politics.
-      <br><br>
-      Previously, I worked as Florida election correspondent for Teen Vogue, a bilingual fact-checker for the Miami Herald, and a local news intern at NBC4 Washington and Telemundo 44.
-
-      <span class="cursor"></span>
-
-    </div>
-    <div class="contact">
-      <a href="mailto:samuellarreal@gmail.com">samuellarreal@gmail.com</a> ·
-      <a href="https://signal.me/#eu/0o-IYvPxMIVjHw2jOKnNsajdBa6TX7qnUX8H0RVr9kncqbuMi4BCFYicopst7swd">Signal</a>
-    </div>
-  </div>
-</div>
-<div class="filters">
-  <button class="active" onclick="filter('all')">ALL</button>
-  <button onclick="filter('ai')">🤖 AI</button>
-  <button onclick="filter('crypto')">💰 CRYPTO</button>
-  <button onclick="filter('data')">🏗️ DATA CTR</button>
-  <button onclick="filter('deepfake')">🎭 DEEPFAKES</button>
-  <button onclick="filter('tiktok')">📱 TIKTOK</button>
-  <button onclick="filter('money')">📊 MONEY</button>
-  <button onclick="filter('ca')">🌴 CALIFORNIA</button>
-  <button onclick="filter('congress')">🏛️ CONGRESS</button>
-  <button onclick="filter('wh')">🏠 WHITE HOUSE</button>
-</div>
-
-<div class="must-reads" id="must-reads">
-  <div class="must-reads-title" onclick="toggleMustReads()">// MUST READS <span class="must-reads-toggle" id="must-reads-toggle">[−]</span></div>
-  <div class="must-reads-list" id="must-reads-list">
-    <div class="must-reads-item">
-      <a href="https://www.notus.org/technology/data-centers-community-investment">Data Centers Are Embedding Themselves in American Communities. Who Will Pay?</a>
-      <p>Small towns across the country are tying their economic futures to Silicon Valley's massive investments in data centers. If these projects stalled, residents of small towns would face property tax hikes to pay for infrastructure that was built to serve facilities that no longer need it.</p>
-    </div>
-    <div class="must-reads-item">
-      <a href="https://www.notus.org/2026-election/ai-super-pacs-leading-the-future-public-first-alex-bores">The AI Super PAC Fight That Might Shape the Midterms</a>
-      <p> AI-aligned super PACs spending in the 2026 midterms might shape the future of AI regulation. The piece focuses on New York Assemblymember Alex Bores, who became a target of the industry-backed group Leading the Future after announcing a bid for Congress. Elections have become a new front in the AI policy debate.</p>
-    </div>
-    <div class="must-reads-item">
-      <a href="https://www.notus.org/technology/trump-data-centers-state-republican-lawmakers">Trump Loves Data Centers. Many Republican Lawmakers Don't.</a>
-      <p> This story explores the widening gap between Republicans in state Legislatures and in Washington on AI and data center regulation. State-level Republicans told me there is growing skepticism about how close President Trump has become to Silicon Valley, translating into a greater push to regulate and even impose a moratorium on new data centers.</p>
-    </div>
-    <div class="must-reads-item">
-      <a href="https://www.notus.org/congress/palantir-stock-investing-democrats-immigration">These Democrats Decry Trump's Immigration Actions. They Also Invested in ICE Contractor Palantir.</a>
-      <p> For this story, I talked to Democratic lawmakers who have publicly denounced Trump's immigration enforcement while holding personal investments in Palantir, a prominent contractor for ICE. Some of them traded millions in Palantir stock throughout last year. Some of them argued their holdings don't present any conflict with their position. Others, like Rep. Cleo Fields, told me: "I wish I could get my money back."</p>
-    </div>
-  </div>
-</div>
-
-<div class="counter" id="counter"></div>
-<ul class="stories" id="stories">
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/eric-swalwell-california-company-ai-campaigns">Eric Swalwell's AI-Powered Political Startup Is Making Big Money From Democratic Allies</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/palantir-lobbyists-government-contracts-ice-defense">Palantir Hires Two New Lobbyists With Democratic Party Ties</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/2026-election/illinois-democratic-primaries-outside-money-ai-aipac">Outside Group Spending Is Overwhelming Democratic Primaries</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/defense/defense-committee-ai-use-military-iran-strikes">House Defense Committee Leaders Don't Know How AI Is Being Used on Iran</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/anthropic-defense-ai-industry-competitiveness-china-concerns">Republicans Want to Protect the AI Industry as the Pentagon Cracks Down on Anthropic</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/technology/big-tech-leaders-sign-trump-nonbinding-pledge-data-center-fallout">Big Tech Leaders Sign Trump's Nonbinding Pledge to Address Data Center Fallout</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/democrats-trump-anthropic-feud-ai-industry">Some Democrats Hope Trump's Anthropic Feud Will Help Them Win Over the AI Industry</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/congress/trump-iran-strikes-war-powers-tim-kaine-massie-khanna">Trump's Iran Strikes Haven't Changed the State of Play on Congress' War Powers Push</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/foreign-policy/senate-intelligence-mark-warner-trump-strikes-iran-nuclear-weapon">Senate Intelligence Leader Lays Out Worst-Case Scenario After Trump's Strikes on Iran</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-white-house/trump-anthropic-federal-agency-work-pentagon">Trump Moves to Cut Anthropic From Federal Agency Work</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/technology/trump-tech-companies-data-center-energy-cost-state-of-the-union">Trump Puts Pressure on Tech Companies to Pick Up the Tab for Data Center Energy</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/tom-suozzi-palantir-stock-homeland-security-ice">Democratic Rep. Tom Suozzi Owned Palantir Stock While Voting to Fund Homeland Security</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/technology/trump-data-centers-state-republican-lawmakers">Trump Loves Data Centers. Many Republican Lawmakers Don't.</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/kelly-loeffler-nvidia-groq-stock-investment-trump-administration">Nvidia Struck a $20 Billion Deal With an AI Startup. Kelly Loeffler Made a Massive Investment Weeks Earlier.</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/congress/palantir-stock-investing-democrats-immigration">These Democrats Decry Trump's Immigration Actions. They Also Invested in ICE Contractor Palantir.</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/technology/virginia-data-centers-subramanyam">The Virginia Democrat in the Middle of the Data Center Boom Wants His Party to Crack Down</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/theft-pac-political-committee-american-fintech-council">Banking Industry Political Committee Hit with Fraud</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/ai-super-pac-fundraising-midterms-democrats-republicans">AI Industry Super PAC Enters Midterm Elections With a $70 Million War Chest</a> <span class="coauthor">w/ Taylor Giorno</span></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/technology/democrats-claims-anti-trump-censorship-tiktok">Democrats Are Taking Claims of Anti-Trump Censorship on TikTok Seriously</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/grok-ai-images-republicans-content-moderation">Grok Is Testing Republicans on Content Moderation</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/money/nvidia-stock-trades-congress-pelosi-khanna-mcclain-cleo-fields">Nvidia Won Trump's Favor. These Federal Lawmakers Stand to Profit.</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/technology/data-centers-ai-energy-lobbying-donald-trump-congress">Data Center Lobbying Is Booming as Tech and Energy Giants Face 'Affordability' Backlash</a> <span class="coauthor">w/ Shifra Dayak, Jade Lozada</span></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/silicon-valley-tech-force-trump">Silicon Valley Has Bought Into Trump's 'Tech Force' — Even as Details Remain TBD</a> <span class="coauthor">w/ Margaret Manto</span></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/2026-election/ai-super-pacs-leading-the-future-public-first-alex-bores">The AI Super PAC Fight That Might Shape the Midterms</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/campaigns/abdul-el-sayed-democrat-senate-candidate-data-center-backlash">This Democratic Candidate Is Trying to Leverage Data Center Backlash</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/house/republican-doug-lamalfa-house">Republican Rep. Doug LaMalfa Has Died</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-white-house/epstein-files-release-trump-doj-defends">Latest Epstein Files Release Includes Many Mentions of Trump. The DOJ Called Them 'Unfounded.'</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/us-news/epstein-files-trump-doj-bill-clinton">Trump DOJ's First Epstein Files Drop Heavily Features Bill Clinton</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/republicans-trump-ai-agenda">Will Trump's AI Agenda Backfire?</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/trump-executive-state-level-ai-regulation">Trump Signs Executive Order Aimed at Curbing State-Level AI Regulation</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/congress-regulate-artificial-intelligence">How Congress Fumbled Regulating Artificial Intelligence</a></div></li>
-  <li data-cat="data"><span class="emoji">🏗️</span><div class="headline"><a href="https://www.notus.org/technology/data-centers-community-investment">Data Centers Are Embedding Themselves in American Communities. Who Will Pay?</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/congress/house-unanimous-vote-senator-sue-government-data-collection-investigation">House Unanimously Votes to Repeal Senators' Ability to Sue the Government Over Data Collection</a> <span class="coauthor">w/ Amelia Benavides-Colón</span></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/senate/republican-senators-phone-data-provision">Republican Senators Want to Repeal the Phone Data Provision They Added to the Funding Bill</a> <span class="coauthor">w/ Ursula Perano</span></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/courts/doj-lawsuit-stop-california-new-congressional-redistricting-map">DOJ Joins Legal Bid to Stop California's New Congressional Map</a> <span class="coauthor">w/ Manuela Silva</span></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/house/house-republicans-senate-provision-data">House Republicans Want to Force Congress to Revisit a Provision That Lets Senators Sue Over Their Data</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/technology/nancy-pelosi-election-tech-regulation">The Race to Replace Nancy Pelosi Could Be All About Tech Regulation</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/technology/nvidia-ceo-jensen-huang-trump-ballroom-east-wing-white-house-donor">Nvidia CEO Confirms He's Helping to Fund Trump's Ballroom</a></div></li>
-  <li data-cat="deepfake"><span class="emoji">🎭</span><div class="headline"><a href="https://www.notus.org/2026-election/artificial-intelligence-political-ads-whats-next">Artificial Intelligence Is Hitting Politics. Nobody Knows Where It Will End.</a> <span class="coauthor">w/ Ursula Perano</span></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/2026-election/california-governors-race-democrats-trump">California Is Struggling to Find its Next Trump-Era Leader</a> <span class="coauthor">w/ Manuela Silva</span></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-white-house/white-house-east-wing-knock-down-construction-trump-ballroom">Crews Knock Down White House Exterior as Trump's Ballroom Project Begins</a></div></li>
-  <li data-cat="deepfake"><span class="emoji">🎭</span><div class="headline"><a href="https://www.notus.org/campaigns/nrsc-schumer-deepfake">The NRSC Is Using a Schumer Deepfake to Knock Democrats on Shutdown</a></div></li>
-  <li data-cat="deepfake"><span class="emoji">🎭</span><div class="headline"><a href="https://www.notus.org/technology/political-strategists-ai">Political Strategists Are Embracing AI</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/technology/gavin-newsom-donald-trump-ai-policy-california-democrats">California's AI Law is Setting the Tone for Democratic Party Policy — And Gavin Newsom's Future</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/democrats/2028-potential-candidates-government-shutdown">Democratic Presidential Prospects Are Unified in Shutdown Messaging Fight</a></div></li>
-  <li data-cat="tiktok"><span class="emoji">📱</span><div class="headline"><a href="https://www.notus.org/technology/trump-tiktok-executive-order">Trump Signs Executive Order Clearing the Way for a TikTok Deal</a></div></li>
-  <li data-cat="tiktok"><span class="emoji">📱</span><div class="headline"><a href="https://www.notus.org/technology/tiktok-announcement">The White House Says TikTok Will be Sold to a U.S. Joint Venture</a></div></li>
-  <li data-cat="deepfake"><span class="emoji">🎭</span><div class="headline"><a href="https://www.notus.org/technology/deepfakes-campaigns">Deepfakes Are Everywhere, and Many Campaigns Aren't Prepared</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/technology/content-moderation-charlie-kirk-video-social-media">Republicans Grapple With Content Moderation After Charlie Kirk's Assassination Was Shared on Social Media</a></div></li>
-  <li data-cat="tiktok"><span class="emoji">📱</span><div class="headline"><a href="https://www.notus.org/technology/donald-trump-tiktok-sale-deadline-extended-december">Trump Pushes the TikTok Sale Deadline for a Fourth Time</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/congress/charlie-kirk-political-violence-congress-security">Congress Is Facing Escalating Political Violence — And Doesn't Know How to Stop It</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/us-news/charlie-kirk-utah-political-leaders">'Violence Will Not Silence Us' Says Lawmaker Who Represents District Where Charlie Kirk Was Assassinated</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/alex-padilla-gubernatorial-california">Alex Padilla Won't Rule Out a Gubernatorial Run in California</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/california-republicans-redistricting">California Republicans Say the Redistricting Battle Should Play Out in the State Rather than Congress</a></div></li>
-  <li data-cat="tiktok"><span class="emoji">📱</span><div class="headline"><a href="https://www.notus.org/trump-white-house/lawmakers-congress-tiktok-law-white-house-account">Lawmakers Are Getting Tired of Trump Ignoring Congress' TikTok Law</a> <span class="coauthor">w/ Haley Byrd Wilt</span></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/congress/trumps-pocket-rescission-is-already-complicating-government-funding-negotiations">Trump's 'Pocket Rescission' Is Already Complicating Government Funding Negotiations</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/newsom-trump-crime-fighting-teams-california-streets">Channeling Trump, Newsom Deploys His Own Crime-Fighting Teams Onto California Streets</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-white-house/white-house-susan-monarez-cdc-issues-warning">White House Says Monarez Wasn't 'Aligned' With Trump on CDC, Issues a Warning to Others</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/democrats/newsom-democrats-ideas-2028-presidential-election-turnaround">Fired-Up Newsom Shares His Pitch for a Democratic Turnaround</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-white-house/heather-honey-dhs-election-integrity-2020">2020 Election Denier Given Key DHS Post Overseeing Election Integrity</a> <span class="coauthor">w/ Torrence Banks</span></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/apples-ios-update-polling-industry-damage-spam-filter">Apple's New iOS Update Could Further Damage an Already Struggling Polling Industry</a> <span class="coauthor">w/ Nuha Dolby</span></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/senate/republican-senators-ai-artificial-intelligence-shrink-government">Republican Senators See AI as a Shortcut to Shrinking the Government</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/kamala-harris-california-governor-race">Kamala Harris Just Kicked Off the California Governor's Race</a></div></li>
-  <li data-cat="money"><span class="emoji">📊</span><div class="headline"><a href="https://www.notus.org/senate/trump-josh-hawley-pawn-truth-social-congressional-stock-trading-ban">Trump Lashes Out at 'Second-Tier Senator' for Backing Stock Trading Ban</a> <span class="coauthor">w/ Amelia Benavides-Colón</span></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/kamala-harris-california-governor">Kamala Harris Won't Run for Governor</a> <span class="coauthor">w/ Jasmine Wright</span></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/cryptocurrency-industry-clarity">The Cryptocurrency Industry Wants CLARITY When Congress Returns</a> <span class="coauthor">w/ Taylor Giorno</span></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/trump-artificial-intelligence-development">Trump Announces Plan to Accelerate U.S. Artificial Intelligence Development</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/house-cryptocurrency-bill-genius-act">House Passes Landmark Cryptocurrency Bill</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/house/house-republicans-crypto-week">House Republicans Are Trying to Steer 'Crypto Week' Back on Track</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/house-republicans-crypto-legislation">'We're Working It Out': House Republicans Still Don't Know How They'll Pass Crypto Legislation</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/congress/crypto-week-derailed-genius-act">Congress's Crypto Week Derailed on Day 1</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/lawmakers-ai-entry-level-tech-jobs">Lawmakers Worry that AI Will Hurt Entry-Level Tech Jobs</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/policy/reconciliation-bill-gambling">Republicans' Reconciliation Bill Threatens to Upend the Gambling Industry</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/lawmakers-senate-ai-moratorium-reconciliation">Lawmakers Are Celebrating the Senate Stripping an AI Moratorium from Reconciliation</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/artificial-intelligence-provision-reconciliation-bill">Will an Artificial Intelligence Provision Sink Republicans' Reconciliation Bill?</a></div></li>
-  <li data-cat="tiktok"><span class="emoji">📱</span><div class="headline"><a href="https://www.notus.org/technology/tiktok-ban-extension-trump">'I Just Want Finality': Some GOP Senators Are Tired of Trump's TikTok Extensions</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/senate-cryptocurrency-bill-genius-act">The Senate Passes Its Landmark Cryptocurrency Bill</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/senate-republicans-crypto-party-priority">Senate Republicans Say They're Close to Making Crypto a Party Priority</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/house-republicans-crypto-bill-trump">House Republicans Think Their Crypto Bill Stands a Better Chance Under Trump</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/technology/democrats-cryptocurrency-policy-funds">Democrats Say They Can Support Crypto While Calling Out Trump</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/trump-executive-orders-drones-flying-cars">Trump Wants the U.S. to Manufacture Drones and Flying Cars</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/democrats-trump-threats-trans-student-athlete-policies">California 'Can't Bend the Knee': Democrats Want Their State to Hold the Line on Trans Rights</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/congress/marjorie-taylor-greene-reconciliation-bill-ai-provision">Marjorie Taylor Greene Regrets Voting for the Reconciliation Bill Without Reading Its AI Provision</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/congress-ai-chatgpt-google">Lawmakers Find a New Legislative Assistant: Artificial Intelligence</a></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/senate-reconciliation-bill-ai-regulation-moratorium-hawley">Hawley Says He'll 'Do Everything I Can to Kill' the AI Provision in the House's Reconciliation Bill</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/congress/trump-memecoin-crypto-gala-democrats">Democrats Want to Force Republicans to Vote on Whether They're OK With Trump's Memecoin Activity</a></div></li>
-  <li data-cat="crypto"><span class="emoji">💰</span><div class="headline"><a href="https://www.notus.org/senate/cryptocurrency-dave-mccormick-investments">Sen. Dave McCormick Is Legislating Crypto — And Making Money Off It</a> <span class="coauthor">w/ Claire Heddles</span></div></li>
-  <li data-cat="ai"><span class="emoji">🤖</span><div class="headline"><a href="https://www.notus.org/technology/house-republicans-ai-regulation-moratorium">House Republicans Want to Block States From Regulating AI — But Congress Hasn't Made Progress on Its Own Guardrails</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/california-legislature-congressional-district-map">The California Legislature Just Cleared the Way for a New Congressional District Map</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/democrats-california-redistricting-gerrymandering-momentum-2026-midterms">Democrats See California's Redistricting Efforts as a Path to Building Momentum for Their Party</a></div></li>
-  <li data-cat="congress"><span class="emoji">🏛️</span><div class="headline"><a href="https://www.notus.org/senate/adam-schiff-legal-defense-fund-formed">Adam Schiff Forms Legal Defense Fund to Prepare for Trump Attacks</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/gavin-newsom-trump-homeless-encampments-dc-california-national-guard">Trump's Efforts to End Homeless Encampments Are Putting Gavin Newsom in a Political Bind</a></div></li>
-  <li data-cat="ca"><span class="emoji">🌴</span><div class="headline"><a href="https://www.notus.org/california/california-democrats-redistrict-texas-trigger">California Democrats Say They'll Redistrict Only if Texas Does First</a></div></li>
-  <li data-cat="wh"><span class="emoji">🏠</span><div class="headline"><a href="https://www.notus.org/trump-classified-info-congress">Trump Wants to Limit Classified Info Sharing With Congress</a></div></li>
-</ul>
-<div class="footer">
-  <a href="https://www.notus.org/samuel-larreal">NOTUS</a> ·
-  <a href="mailto:samuellarreal@gmail.com">EMAIL</a> ·
-  <a href="https://signal.me/#eu/0o-IYvPxMIVjHw2jOKnNsajdBa6TX7qnUX8H0RVr9kncqbuMi4BCFYicopst7swd">SIGNAL</a>
-  <br><br>
-   2026 SAMUEL LARREAL
-</div>
-</div><!-- .site-content -->
 <script>
-// Loading screen
 (function() {
-  const lines = [
-    'C:\\> PORTFOLIO.EXE',
-    'Loading...',
-    'Ready.'
-  ];
-  const loaderText = document.getElementById('loader-text');
-  const loader = document.getElementById('loader');
-  const siteContent = document.getElementById('site-content');
-  let lineIndex = 0;
-  function typeLine() {
-    if (lineIndex >= lines.length) {
-      // All lines typed, fade out after a brief pause
-      setTimeout(() => {
-        loader.classList.add('loader-fade');
-        setTimeout(() => {
-          loader.style.display = 'none';
-          siteContent.classList.add('site-visible');
-          // Trigger the story counter
-          const total = document.querySelectorAll('.stories li').length;
-          document.getElementById('counter').textContent = `> ${total} stories loaded_`;
-        }, 200);
-      }, 100);
-      return;
-    }
-    const line = lines[lineIndex];
-    const div = document.createElement('div');
-    div.classList.add('loader-line');
-    loaderText.appendChild(div);
-    let charIndex = 0;
-    const speed = lineIndex === 0 ? 20 : 10; // Fast typing
-    function typeChar() {
-      if (charIndex < line.length) {
-        div.textContent = line.substring(0, charIndex + 1);
-        charIndex++;
-        setTimeout(typeChar, speed);
-      } else {
-        lineIndex++;
-        const delay = lineIndex === lines.length ? 0 : 80 + Math.random() * 60;
-        setTimeout(typeLine, delay);
-      }
-    }
-    typeChar();
+  var cats = {
+    all: 'ALL FILED', ai: 'AI', crypto: 'CRYPTO', data: 'DATA CTR',
+    deepfake: 'DEEPFAKES', tiktok: 'TIKTOK', money: 'MONEY',
+    ca: 'CALIFORNIA', congress: 'CONGRESS', wh: 'WHITE HOUSE'
+  };
+  var articlesList = document.getElementById('articles');
+  var filterLabel = document.getElementById('filter-label');
+  var articleCount = document.getElementById('article-count');
+  var mustReads = document.getElementById('must-reads');
+  var mrList = document.getElementById('mr-list');
+  var mrGlyph = document.getElementById('mr-glyph');
+  var mrOpen = true;
+  var currentFilter = 'all';
+
+  function updateCount(cat) {
+    currentFilter = cat;
+    var visible = 0;
+    articlesList.querySelectorAll('li').forEach(function(li) {
+      var show = cat === 'all' || li.dataset.cat === cat;
+      li.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    filterLabel.textContent = cats[cat] || 'ALL FILED';
+    articleCount.textContent = visible + ' filed';
   }
-  typeLine();
-})();
-function toggleMustReads() {
-  const list = document.getElementById('must-reads-list');
-  const toggle = document.getElementById('must-reads-toggle');
-  if (list.style.display === 'none') {
-    list.style.display = 'block';
-    toggle.textContent = '[−]';
-  } else {
-    list.style.display = 'none';
-    toggle.textContent = '[+]';
-  }
-}
-function filter(cat) {
-  const items = document.querySelectorAll('.stories li');
-  const buttons = document.querySelectorAll('.filters button');
-  const mustReads = document.getElementById('must-reads');
-  let visible = 0;
-  buttons.forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  // Hide must reads when filtering by category
-  if (mustReads) {
-    mustReads.style.display = cat === 'all' ? 'block' : 'none';
-  }
-  items.forEach(li => {
-    if (cat === 'all' || li.dataset.cat === cat) {
-      li.style.display = 'flex';
-      visible++;
-    } else {
-      li.style.display = 'none';
-    }
+
+  updateCount('all');
+
+  document.getElementById('filters').addEventListener('click', function(e) {
+    var btn = e.target.closest('.chip');
+    if (!btn) return;
+    document.querySelectorAll('.chip').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var cat = btn.dataset.filter;
+    updateCount(cat);
+    mrOpen = cat === 'all';
+    mrList.style.display = mrOpen ? '' : 'none';
+    mrGlyph.textContent = mrOpen ? '[−]' : '[+]';
+    mustReads.style.display = cat === 'all' ? '' : 'none';
   });
-  document.getElementById('counter').textContent =
-    cat === 'all'
-      ? `> ${visible} stories loaded_`
-      : `> ${visible} stories matching [${cat.toUpperCase()}]_`;
-}
+
+  document.getElementById('mr-toggle').addEventListener('click', function() {
+    mrOpen = !mrOpen;
+    mrList.style.display = mrOpen ? '' : 'none';
+    mrGlyph.textContent = mrOpen ? '[−]' : '[+]';
+  });
+
+  // Live sync: pull in any NOTUS bylines published after this page was last
+  // hand-edited. Fails silently — the static list underneath is always valid.
+  // Not deployed yet — set to the real worker URL to turn this on.
+  var STORY_SYNC_URL = 'https://notus-story-sync.YOUR-SUBDOMAIN.workers.dev';
+  var emojiFor = {
+    ai: '🤖', crypto: '💰', data: '🏗️', deepfake: '🎭', tiktok: '📱',
+    money: '📊', ca: '🌴', congress: '🏛️', wh: '🏠', news: '📰'
+  };
+
+  if (STORY_SYNC_URL.indexOf('YOUR-SUBDOMAIN') === -1) {
+  fetch(STORY_SYNC_URL, { cache: 'no-store' })
+    .then(function(res) { return res.ok ? res.json() : null; })
+    .then(function(data) {
+      if (!data || !data.stories || !data.stories.length) return;
+
+      var known = new Set();
+      articlesList.querySelectorAll('li > a').forEach(function(a) {
+        known.add(a.getAttribute('href'));
+      });
+
+      var fragment = document.createDocumentFragment();
+      var added = false;
+
+      data.stories.forEach(function(story) {
+        if (known.has(story.url)) return;
+        known.add(story.url);
+        added = true;
+
+        var li = document.createElement('li');
+        li.dataset.cat = story.category;
+
+        var a = document.createElement('a');
+        a.href = story.url;
+        a.className = 'row-link';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+
+        var emojiSpan = document.createElement('span');
+        emojiSpan.className = 'emoji';
+        emojiSpan.textContent = emojiFor[story.category] || '📰';
+
+        var headlineSpan = document.createElement('span');
+        headlineSpan.className = 'headline';
+        headlineSpan.textContent = story.title;
+
+        a.appendChild(emojiSpan);
+        a.appendChild(headlineSpan);
+        li.appendChild(a);
+        fragment.appendChild(li);
+      });
+
+      if (added) {
+        articlesList.insertBefore(fragment, articlesList.firstChild);
+        updateCount(currentFilter);
+      }
+    })
+    .catch(function() { /* NOTUS unreachable or proxy down — static list stands as-is */ });
+  }
+})();
 </script>
 </body>
 </html>

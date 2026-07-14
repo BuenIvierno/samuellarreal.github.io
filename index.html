@@ -258,32 +258,37 @@
 
   // Live sync: pull in any NOTUS bylines published after this page was last
   // hand-edited. Fails silently — the static list underneath is always valid.
-  // Not deployed yet — set to the real worker URL to turn this on.
-  var STORY_SYNC_URL = 'https://notus-story-sync.YOUR-SUBDOMAIN.workers.dev';
+  //
+  // NOTUS lists stories newest-first. Rather than diffing against every URL
+  // already on the page (which would resurface the older, off-beat stories
+  // deliberately left out of this curated list), we cut the feed off at the
+  // story that was most recent as of the last hand-edit. Only anything NOTUS
+  // has published above that anchor counts as "new." If the anchor URL can't
+  // be found (e.g. NOTUS renamed/removed it), we bail out rather than risk
+  // dumping the whole back-catalog onto the page.
+  var STORY_SYNC_URL = 'https://notus-story-sync.samuellarreal.workers.dev';
+  var STORY_SYNC_ANCHOR = 'https://www.notus.org/technology/data-centers-community-investment';
   var emojiFor = {
     ai: '🤖', crypto: '💰', data: '🏗️', deepfake: '🎭', tiktok: '📱',
     money: '📊', ca: '🌴', congress: '🏛️', wh: '🏠', news: '📰'
   };
 
-  if (STORY_SYNC_URL.indexOf('YOUR-SUBDOMAIN') === -1) {
   fetch(STORY_SYNC_URL, { cache: 'no-store' })
     .then(function(res) { return res.ok ? res.json() : null; })
     .then(function(data) {
       if (!data || !data.stories || !data.stories.length) return;
 
-      var known = new Set();
-      articlesList.querySelectorAll('li > a').forEach(function(a) {
-        known.add(a.getAttribute('href'));
-      });
+      var freshStories = [];
+      var foundAnchor = false;
+      for (var i = 0; i < data.stories.length; i++) {
+        if (data.stories[i].url === STORY_SYNC_ANCHOR) { foundAnchor = true; break; }
+        freshStories.push(data.stories[i]);
+      }
+      if (!foundAnchor || !freshStories.length) return;
 
       var fragment = document.createDocumentFragment();
-      var added = false;
 
-      data.stories.forEach(function(story) {
-        if (known.has(story.url)) return;
-        known.add(story.url);
-        added = true;
-
+      freshStories.forEach(function(story) {
         var li = document.createElement('li');
         li.dataset.cat = story.category;
 
@@ -307,13 +312,10 @@
         fragment.appendChild(li);
       });
 
-      if (added) {
-        articlesList.insertBefore(fragment, articlesList.firstChild);
-        updateCount(currentFilter);
-      }
+      articlesList.insertBefore(fragment, articlesList.firstChild);
+      updateCount(currentFilter);
     })
     .catch(function() { /* NOTUS unreachable or proxy down — static list stands as-is */ });
-  }
 })();
 </script>
 </body>
